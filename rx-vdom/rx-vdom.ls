@@ -22,12 +22,12 @@ class FocusHook
 # Event sources
 isTag = (name) -> (el) -> el.tagName == name
 # event to observable, select `event.target` element
-keyup$ = Rx.DOM.keyup document.body .map (.target)
+keypress$ = Rx.DOM.keypress document.body .map (.target)
 click$ = Rx.DOM.click document.body .map (.target)
 # filter by element type, attributtes
 index$ = click$.filter isTag 'P' .map (.idx)
-text$  = keyup$.filter isTag 'INPUT' .map (.value)
-reset$ = click$.filter isTag 'BUTTON' .filter (el) -> el.useAs == 'RESET'
+text$  = keypress$.filter isTag 'INPUT' .map (.value)
+reset$ = click$.filter isTag 'BUTTON' .filter (.useAs == 'RESET')
 
 # Form logic
 formState$ = reset$
@@ -127,7 +127,7 @@ function buildVDOMupdater container = document.body
       lastTree := vTree
       rootNode := patch rootNode, patches
 
-# Helpers
+# Rx extensions
 function rxExtend
   Rx.Observable.prototype.latestWith = (...args) ->
     # [a, b, c, d] -> [[a, b], [c, d]]

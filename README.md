@@ -1,13 +1,12 @@
 # Virtual-DOM playground
 
 ####Rx-Virtual-DOM ([Matt-Esch/virtual-dom][github-virtual-dom])
-<!-- ####[Matt-Esch/virtual-dom][github-virtual-dom] -->
 
-- [rx-vdom.ls][rx-vdom-ls] (http://jsbin.com/monacirama/1/edit?js,output)
+- [rx-vdom.ls][rx-vdom-ls] (http://plnkr.co/edit/dm5zl1?p=preview)
 
 ####Rx-Incremental-DOM ([google/incremental-dom][github-incremental-dom])
 
-- [rx-incremental-dom.ls][rx-incremental-dom-ls] (http://jsbin.com/laxuhoyahi/1/edit?js,output)
+- [rx-incremental-dom.ls][rx-incremental-dom-ls] (http://plnkr.co/edit/oFVJyf?p=preview)
 
 ## Local
 

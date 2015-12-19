@@ -8,6 +8,10 @@
 
 - [rx-incremental-dom.ls][rx-incremental-dom-ls] (http://plnkr.co/edit/oFVJyf?p=preview)
 
+####Rx-Cycle ([cyclejs/cycle-core][github-cycle])
+
+- [rx-cycle.ls][rx-cycle-ls] (http://plnkr.co/edit/VdVHNM?p=preview)
+
 ## Local
 
 __Use any of your favourite web server to serve static files__  
@@ -29,7 +33,10 @@ http-server . -p 8080
 
 [rx-vdom-ls]: ./rx-vdom/rx-vdom.ls
 [rx-incremental-dom-ls]: ./rx-incremental-dom/rx-incremental-dom.ls
+[rx-cycle-ls]: ./rx-cycle/rx-cycle.ls
 [license]: ./LICENSE
 
 [github-virtual-dom]: https://github.com/Matt-Esch/virtual-dom
 [github-incremental-dom]: https://github.com/google/incremental-dom
+[github-cycle]: https://github.com/cyclejs/cycle-core
+

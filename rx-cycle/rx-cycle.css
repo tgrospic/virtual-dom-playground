@@ -1,0 +1,33 @@
+body, input, button {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 4px;
+}
+
+.form {
+  padding: 10px;
+  background-color: #E0EEFF;
+}
+
+.element {
+  padding: 10px;
+  background-color: #90C3D4;
+  cursor: pointer;
+}
+
+.element.selected {
+  color: white;
+  background-color: #116480;
+}
+
+.history {
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: #444;
+  background-color: #D4D4D4;
+}

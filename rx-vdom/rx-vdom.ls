@@ -22,7 +22,7 @@ class FocusHook
 # Event sources
 isTag = (name) -> (el) -> el.tagName == name
 # event to observable, select `event.target` element
-keypress$ = Rx.DOM.keypress document.body .map (.target)
+keypress$ = Rx.DOM.input document.body .map (.target)
 click$ = Rx.DOM.click document.body .map (.target)
 # filter by element type, attributtes
 index$ = click$.filter isTag 'P' .map (.idx)

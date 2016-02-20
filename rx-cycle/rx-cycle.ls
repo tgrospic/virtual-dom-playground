@@ -1,3 +1,4 @@
+{run} = Cycle
 {h, makeDOMDriver} = CycleDOM
 rxExtend!
 
@@ -86,7 +87,7 @@ historyVTree$ = history$.map renderHistory
 # Subscribe state with DOM driver, BIG BANG -> first reset :))
 states  = -> FORM: formVTree$,  HISTORY: historyVTree$
 drivers =    FORM: makeDriver!, HISTORY: makeDriver!
-Cycle.run states, drivers
+run states, drivers
 
 # ---------------------------------------------------------------------
 

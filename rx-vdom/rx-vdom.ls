@@ -37,7 +37,7 @@ formState$ = reset$
   .map -> new FormState!
 
   # (a) in parallel with latest state value
-  .share!
+  .shareReplay!
   .latestWith do
     index$, (st, idx) -> st.setIndex idx; st
     text$, (st, txt) -> st.setText txt; st
